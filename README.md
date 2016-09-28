@@ -1,6 +1,6 @@
 # RandomSkyline #
 # Todo:#
-- [ ] Skyline files
+- [x] Add Skyline files
 - [ ] Change Skyline to RandomSkyline (Driver class)
 - [ ] Add/edit algorithm
 - [ ] Make the number of buildings random but shouldn't pass left and right boundaries
