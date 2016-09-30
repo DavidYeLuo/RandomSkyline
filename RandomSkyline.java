@@ -1,8 +1,8 @@
 /**
- * Skyline --- program to display a pretty skyline
- * @author     Lewis/Loftus, modified by David Ye Luo, Kenta Medina
+ * RandomSkyline --- program to display a pretty skyline
+ * @author     David Ye Luo, Kenta Medina
  * @version    1.0
- * @since      2016-09-27
+ * @since      2016-09-29
 */
 
 import javax.swing.*;
@@ -13,7 +13,7 @@ import java.awt.*;
 //  3) draw windows
 //  4) draw a sentence
 //--------------------------------------------------------------------
-public class Skyline
+public class RandomSkyline
 {
    /**
    * displays the skyline in a JFrame
