@@ -1,0 +1,14 @@
+int index = 0;
+
+while(index < screenWidth){
+
+  gapWidth = random value;
+  index += gapWidth;
+  
+  buildingWidth = random value;
+  add building that's (buildingWidth) pixels wide at index;
+  index += buildingWidth;
+  
+}
+
+And then you draw everything...
