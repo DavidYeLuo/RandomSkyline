@@ -2,7 +2,7 @@
  * SkylinePanel --- program to draw buildings
  * @author          David Ye Luo, Kenta Medina
  * @version         1.0
- * @since           2016-09-27 
+ * @since           2016-10-06
 */
 
 import javax.swing.*;
@@ -11,8 +11,9 @@ import java.lang.*;
 
 public class SkylinePanel extends JPanel
 {
-    private Building building1; //instantiate
+    private Building building1; //Declare
     private Star shinyThing;
+    
    //-------------------------------------------------
    //   Default Constructor: Sets up the Panel
    //-------------------------------------------------
@@ -21,6 +22,7 @@ public class SkylinePanel extends JPanel
       setPreferredSize (new Dimension(600, 400));
       setBackground (new Color(255,255,255));
    }
+   
    //-------------------------------------------------
    //   Draws the Panel
    //-------------------------------------------------
@@ -28,13 +30,15 @@ public class SkylinePanel extends JPanel
    {
 
       super.paintComponent(page);
-      for(int i = 0; i < 100; i++){
-        shinyThing = new Star((int)(Math.random()*600), (int)(Math.random()*380), Color.black, 5, 5);
+      for(int i = 0; i < 100; i++){ // 100 iterations
+        shinyThing = new Star((int)(Math.random()*600) // random x from 0 inclusive to 600 exclusive 
+                            , (int)(Math.random()*380) // random y from 0 inclusive to 380 exclusive
+                            , Color.black, 5, 5);      // color and size
         shinyThing.draw(page);
       }
 
-      page.setColor(Color.black);  // moon
-      page.fillOval(50,70,40,40);      // moon
+      page.setColor(Color.black);   // moon
+      page.fillOval(50,70,40,40);   // moon
       
       page.setColor(new Color(0,0,0));   // far background building
       for(int i = 0; i < 40; i++){
@@ -44,7 +48,7 @@ public class SkylinePanel extends JPanel
                       ,40);                         // far background building
       }
       
-      page.setColor(new Color(0,0,0));  // ground  color
+      page.setColor(new Color(0,0,0));  // ground color
       page.fillRect(0,380,600,20);      // ground
 
       int index = 0;
