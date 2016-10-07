@@ -11,9 +11,8 @@ import java.lang.*;
 
 public class SkylinePanel extends JPanel
 {
-   private Building building1, building2;
-   private Building building3, building4;
-   private Building building5, building6;
+   private Building building1;
+   private Star shinyThing;
    //-------------------------------------------------
    //   Default Constructor: Sets up the Panel
    //-------------------------------------------------
@@ -28,9 +27,8 @@ public class SkylinePanel extends JPanel
    public void paintComponent (Graphics page)
    {
       super.paintComponent(page);
-      
       for(int i = 0; i < 100; i++){
-        shinyThing = new Star((int)(Math.random()*600), (int)(Math.random()*380), Color.black, 2, 2);
+        shinyThing = new Star((int)(Math.random()*600), (int)(Math.random()*380), Color.black, 5, 5);
         shinyThing.draw(page);
       }
 
