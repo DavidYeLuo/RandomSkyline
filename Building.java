@@ -2,7 +2,7 @@
  * Building --- class for rectangle-shaped building, to be called by SkylinePanel
  * @author      David Ye Luo, Kenta Medina
  * @version     1.0
- * @since       2016-09-27
+ * @since       2016-10-06
 */
 
 import java.awt.*;
@@ -99,7 +99,6 @@ public class Building
       width = iWidth;
    }
 
-
    //-----------------------------------------------------------------
    //  height mutator.
    //-----------------------------------------------------------------
@@ -123,7 +122,6 @@ public class Building
    {
       return y;
    }
-
 
    //-----------------------------------------------------------------
    //  Color accessor.
@@ -152,7 +150,8 @@ public class Building
    //-----------------------------------------------------------------
    //  toString method.
    //-----------------------------------------------------------------
-   public String toString(){
+   public String toString()
+   {
       return "x(" + x + ") width(" + width + ") height(" + height + ")";
    }
 }
