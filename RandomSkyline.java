@@ -9,9 +9,10 @@ import javax.swing.*;
 import java.awt.*;
 //--------------------------------------------------------------------
 //  1) set background 
-//  2) draw building
-//  3) draw windows
-//  4) draw a sentence
+//  2) draw building randomly
+//  3) draw windows randomly
+//  4) draw stars randomly
+//  5) draw a sentence
 //--------------------------------------------------------------------
 public class RandomSkyline
 {
