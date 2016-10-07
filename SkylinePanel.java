@@ -1,6 +1,6 @@
 /**
  * SkylinePanel --- program to draw buildings
- * @author          Lewis/Loftus, modified by David Ye Luo
+ * @author          David Ye Luo, Kenta Medina
  * @version         1.0
  * @since           2016-09-27 
 */
