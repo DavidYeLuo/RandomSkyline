@@ -15,7 +15,8 @@ public class Star {
 	//--------------------------------------------------------------------
 	//	Constructor: sets up the star based on value
 	//--------------------------------------------------------------------
-	public Star(int ix, int iy, Color color, int iwidth, int iheight) {
+	public Star(int ix, int iy, Color color, int iwidth, int iheight) 
+	{
 		x = ix;
 		y = iy;
 		this.color = color;
@@ -28,7 +29,8 @@ public class Star {
 	//--------------------------------------------------------------------
 	//	 Draws the star in the specified graphics context.
 	//--------------------------------------------------------------------
-	public void draw(Graphics g) {
+	public void draw(Graphics g) 
+	{
 		g.setColor(color);
 		g.fillOval(x, y, width, height);
 	}
@@ -36,56 +38,64 @@ public class Star {
 	//--------------------------------------------------------------------
 	//	 width accessor
 	//--------------------------------------------------------------------
-	public int getWidth() {
+	public int getWidth() 
+	{
 		return width;
 	}
 	
 	//--------------------------------------------------------------------
 	//	 width mutator
 	//--------------------------------------------------------------------
-	public void setWidth(int inum) {
+	public void setWidth(int inum) 
+	{
 		width = inum;
 	}
 	
 	//--------------------------------------------------------------------
 	//	 height accessor
 	//--------------------------------------------------------------------
-	public int getHeight() {
+	public int getHeight() 
+	{
 		return height;
 	}
 	
 	//--------------------------------------------------------------------
 	//	 height mutator
 	//--------------------------------------------------------------------
-	public void setHeight(int inum) {
+	public void setHeight(int inum) 
+	{
 		height = inum;
 	}
 	
 	//--------------------------------------------------------------------
 	//	 x accessor
 	//--------------------------------------------------------------------
-	public int getX() {
+	public int getX() 
+	{
 		return x;
 	}
 	
 	//--------------------------------------------------------------------
 	//	 x mutator
 	//--------------------------------------------------------------------
-	public void setX(int inum) {
+	public void setX(int inum) 
+	{
 		x = inum;
 	}
 	
 	//--------------------------------------------------------------------
 	//	 y accessor
 	//--------------------------------------------------------------------
-	public int getY() {
+	public int getY() 
+	{
 		return y;
 	}
 	
 	//--------------------------------------------------------------------
 	//	 y mutator
 	//--------------------------------------------------------------------
-	public void setY(int inum) {
+	public void setY(int inum) 
+	{
 		y = inum;
 	}
 }
