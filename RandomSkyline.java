@@ -2,7 +2,7 @@
  * RandomSkyline --- program to display a pretty skyline
  * @author     David Ye Luo, Kenta Medina
  * @version    1.0
- * @since      2016-09-29
+ * @since      2016-10-06
 */
 
 import javax.swing.*;
