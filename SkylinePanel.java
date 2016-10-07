@@ -30,8 +30,8 @@ public class SkylinePanel extends JPanel
       super.paintComponent(page);
       
       for(int i = 0; i < 100; i++){
-        //make a star
-        //draw a star
+        shinyThing = new Star((int)(Math.random()*600), (int)(Math.random()*380), Color.black, 2, 2);
+        shinyThing.draw(page);
       }
 
       page.setColor(Color.black);  // moon
