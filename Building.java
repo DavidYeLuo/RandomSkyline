@@ -1,6 +1,6 @@
 /**
  * Building --- class for rectangle-shaped building, to be called by SkylinePanel
- * @author      Kenta Medina
+ * @author      David Ye Luo, Kenta Medina
  * @version     1.0
  * @since       2016-09-27
 */
