@@ -37,7 +37,6 @@ public class Building
       //************************************************************************************************
       //   Windows using nested for loops
       //************************************************************************************************
-      g.setColor (color.yellow);
       for(int i = width%6; i < width-6; i += 6){
          for(int z = 5; z < height-11; z += 11){
             if(Math.random() < 0.02)
@@ -60,6 +59,7 @@ public class Building
                if(toRandom == 0){g.setColor (Color.darkGray);}
                if(toRandom == 1){g.setColor (Color.lightGray);}
                if(toRandom == 2){g.setColor (Color.yellow);}
+               g.setColor (Color.white);
                g.fillRect (i + x, z + y-height, 5, 10);
                //System.out.println("window printed" + toRandom);
             }
