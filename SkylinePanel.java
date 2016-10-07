@@ -68,7 +68,7 @@ public class SkylinePanel extends JPanel
         index += (int)(Math.random()*20+20);
       }
       
-      page.setColor (Color.white);  // string color
+      page.setColor (Color.black);  // string color
       page.drawString("David Ye Luo and Kenta Medina's Skyline with windows", 30, 30); // draw string
    }
 }
