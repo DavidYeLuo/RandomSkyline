@@ -87,7 +87,7 @@ public class Star {
 	//	 y accessor
 	//--------------------------------------------------------------------
 	public int getY() 
-	{
+    {
 		return y;
 	}
 	
