@@ -6,66 +6,66 @@
  */
 import java.awt.*;
 public class Star {
-	private int width;
-	private int height;
-	private int x;
-	private int y;
-	private Color color;
+    private int width;
+    private int height;
+    private int x;
+    private int y;
+    private Color color;
 	
-	//--------------------------------------------------------------------
-	//	Constructor: sets up the star based on value
-	//--------------------------------------------------------------------
-	public Star(int ix, int iy, Color color, int iwidth, int iheight) 
-	{
-		x = ix;
-		y = iy;
-		this.color = color;
-		width = iwidth;
-		height = iheight;
+    //--------------------------------------------------------------------
+    //	Constructor: sets up the star based on value
+    //--------------------------------------------------------------------
+    public Star(int ix, int iy, Color color, int iwidth, int iheight) 
+    {
+        x = ix;
+        y = iy;
+        this.color = color;
+        width = iwidth;
+        height = iheight;
+    }
+
+
+
+    //--------------------------------------------------------------------
+    //	 Draws the star in the specified graphics context.
+    //--------------------------------------------------------------------
+    public void draw(Graphics g) 
+    {
+        g.setColor(color);
+        g.fillOval(x, y, width, height);
 	}
+    
+    //--------------------------------------------------------------------
+    //	 width accessor
+    //--------------------------------------------------------------------
+    public int getWidth() 
+    {
+        return width;
+    }
 	
-	
-	
-	//--------------------------------------------------------------------
-	//	 Draws the star in the specified graphics context.
-	//--------------------------------------------------------------------
-	public void draw(Graphics g) 
-	{
-		g.setColor(color);
-		g.fillOval(x, y, width, height);
-	}
-	
-	//--------------------------------------------------------------------
-	//	 width accessor
-	//--------------------------------------------------------------------
-	public int getWidth() 
-	{
-		return width;
-	}
-	
-	//--------------------------------------------------------------------
-	//	 width mutator
-	//--------------------------------------------------------------------
-	public void setWidth(int inum) 
-	{
-		width = inum;
+    //--------------------------------------------------------------------
+    //	 width mutator
+    //--------------------------------------------------------------------
+    public void setWidth(int inum) 
+    {
+        width = inum;
 	}
 	
 	//--------------------------------------------------------------------
 	//	 height accessor
 	//--------------------------------------------------------------------
 	public int getHeight() 
-	{
-		return height;
-	}
-	
-	//--------------------------------------------------------------------
-	//	 height mutator
-	//--------------------------------------------------------------------
-	public void setHeight(int inum) 
-	{
-		height = inum;
-	}
+    {
+        return height;
+    }
+
+    //--------------------------------------------------------------------
+    //	 height mutator
+    //--------------------------------------------------------------------
+    public void setHeight(int inum) 
+    {
+        height = inum;
+    }
 	
 	//--------------------------------------------------------------------
 	//	 x accessor
