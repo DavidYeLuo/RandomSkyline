@@ -15,13 +15,13 @@ public class Star {
     //--------------------------------------------------------------------
     //	Constructor: sets up the star based on value
     //--------------------------------------------------------------------
-    public Star(int ix, int iy, Color color, int iwidth, int iheight) 
+    public Star(int iX, int iY, Color color, int iWidth, int iHeight) 
     {
-        x = ix;
-        y = iy;
+        x = iX;
+        y = iY;
         this.color = color;
-        width = iwidth;
-        height = iheight;
+        width = iWidth;
+        height = iHeight;
     }
 
 
@@ -46,9 +46,9 @@ public class Star {
     //--------------------------------------------------------------------
     //	 width mutator
     //--------------------------------------------------------------------
-    public void setWidth(int inum) 
+    public void setWidth(int iNum) 
     {
-        width = inum;
+        width = iNum;
 	}
 	
 	//--------------------------------------------------------------------
@@ -62,9 +62,9 @@ public class Star {
     //--------------------------------------------------------------------
     //	 height mutator
     //--------------------------------------------------------------------
-    public void setHeight(int inum) 
+    public void setHeight(int iNum) 
     {
-        height = inum;
+        height = iNum;
     }
 	
 	//--------------------------------------------------------------------
@@ -78,9 +78,9 @@ public class Star {
 	//--------------------------------------------------------------------
 	//	 x mutator
 	//--------------------------------------------------------------------
-	public void setX(int inum) 
+	public void setX(int iNum) 
 	{
-		x = inum;
+		x = iNum;
 	}
 	
 	//--------------------------------------------------------------------
@@ -94,8 +94,8 @@ public class Star {
 	//--------------------------------------------------------------------
 	//	 y mutator
 	//--------------------------------------------------------------------
-	public void setY(int inum) 
+	public void setY(int iNum) 
 	{
-		y = inum;
+		y = iNum;
 	}
 }
