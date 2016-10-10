@@ -42,20 +42,6 @@ public class Building
             if(Math.random() < 0.02)
             {
                int toRandom = (int)(Math.random()*3);   // generate number between 0 to 2
-               //System.out.println("toRandom:" + toRandom);
-               // switch (toRandom)
-               // {
-               //    case 0: g.setColor (color.cyan); System.out.println("case tripped "+ toRandom);
-               //    case 1: g.setColor (color.green); System.out.println("case tripped "+ toRandom);
-               //    case 2: g.setColor (color.yellow); System.out.println("case tripped "+ toRandom);
-               //    case 3: g.setColor (color.orange); System.out.println("case tripped "+ toRandom);
-               //    case 4: g.setColor (color.cyan); System.out.println("case tripped "+ toRandom);
-               //    case 5: g.setColor (color.orange); System.out.println("case tripped "+ toRandom);
-               //    case 6: g.setColor (color.pink); System.out.println("case tripped "+ toRandom);
-               //    case 7: g.setColor (color.red); System.out.println("case tripped "+ toRandom);
-               //    case 8: g.setColor (color.white); System.out.println("case tripped "+ toRandom);
-               //    case 9: g.setColor (color.green); System.out.println("case tripped "+ toRandom);
-               // }
                if(toRandom == 0){g.setColor (Color.darkGray);}
                if(toRandom == 1){g.setColor (Color.lightGray);}
                if(toRandom == 2){g.setColor (Color.yellow);}
