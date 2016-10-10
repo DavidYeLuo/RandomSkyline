@@ -10,8 +10,8 @@ import java.awt.*;
 //--------------------------------------------------------------------
 //  1) set background
 //  2) draw stars randomly
-//  3) draw building randomly
-//  4) draw windows randomly
+//  3) draw buildings randomly
+//      a) draw windows randomly
 //  5) draw a sentence
 //--------------------------------------------------------------------
 
