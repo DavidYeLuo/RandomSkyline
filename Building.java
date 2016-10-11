@@ -2,7 +2,7 @@
  * Building --- class for rectangle-shaped building, to be called by SkylinePanel
  * @author      David Ye Luo, Kenta Medina
  * @version     1.0
- * @since       2016-10-06
+ * @since       2016-10-10
 */
 
 import java.awt.*;
@@ -17,13 +17,13 @@ public class Building
    //-----------------------------------------------------------------
    //  Constructor: Sets up the building with the specified values.
    //-----------------------------------------------------------------
-   public Building (int ix, int iy, Color shade, int iwidth, int iheight)
+   public Building (int iX, int iY, Color shade, int iWidth, int iHeight)
    {
-      x = ix;
-      y = iy;
+      x = iX;
+      y = iY;
       color = shade;
-      width = iwidth;
-      height = iheight;
+      width = iWidth;
+      height = iHeight;
    }
 
    //-----------------------------------------------------------------
