@@ -9,9 +9,9 @@
 - [X] Extra credit: Add stars
 - [ ] Remove commented-out blocks
 - [ ] Add/edit algorithm
-
-
+- [x] Organized methods in Star class
+- [x] Changed Hungrian notation in Building
+- [x] Changed the colors of buildings
 #Comments#
 - Kenta we should use use this file
    to keep our progress
-
