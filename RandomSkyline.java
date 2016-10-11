@@ -2,7 +2,7 @@
  * RandomSkyline --- program to display a pretty skyline
  * @author     David Ye Luo, Kenta Medina
  * @version    1.0
- * @since      2016-10-06
+ * @since      2016-10-10
 */
 
 import javax.swing.*;
@@ -12,7 +12,7 @@ import java.awt.*;
 //  2) draw stars randomly
 //  3) draw buildings randomly
 //      a) draw windows randomly
-//  5) draw a sentence
+//  4) draw a sentence
 //--------------------------------------------------------------------
 
 public class RandomSkyline
