@@ -45,7 +45,7 @@ public class Building
                if(toRandom == 0){g.setColor (Color.darkGray);}
                if(toRandom == 1){g.setColor (Color.lightGray);}
                if(toRandom == 2){g.setColor (Color.yellow);}
-               g.setColor (Color.white);
+               //g.setColor (Color.yellow);
                g.fillRect (i + x, z + y-height, 5, 10);
                //System.out.println("window printed" + toRandom);
             }

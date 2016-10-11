@@ -19,7 +19,7 @@ public class SkylinePanel extends JPanel
    public SkylinePanel()
    {  
       setPreferredSize (new Dimension(600, 400));
-      setBackground (new Color(255,255,255));
+      setBackground (Color.gray);
    }
    //-------------------------------------------------
    //   Draws the Panel
@@ -28,17 +28,17 @@ public class SkylinePanel extends JPanel
    {
 
       super.paintComponent(page);
-      for(int i = 0; i < 100; i++){
-        shinyThing = new Star((int)(Math.random()*600),
-                              (int)(Math.random()*380),
-                               Color.black, 5, 5);
+      for(int i = 0; i < 100; i++){  // stars
+        shinyThing = new Star((int)(Math.random()*600),  // x location of stars
+                              (int)(Math.random()*380),  // y location of stars
+                               Color.yellow, 5, 5);      // color and sizes of stars
         shinyThing.draw(page);
       }
 
-      page.setColor(Color.black);  // moon
-      page.fillOval(50,70,40,40);  // moon
+      page.setColor(Color.lightGray);  // moon
+      page.fillOval(40,60,60,60);      // moon
       
-      page.setColor(new Color(0,0,0));   // far background building
+      page.setColor(new Color(224,255,255));  // far background building
       for(int i = 0; i < 40; i++){
          page.fillRect((int)(Math.random()*680-40),  // far background building
                        (int)(Math.random()*20+360),  // far background building
@@ -46,24 +46,25 @@ public class SkylinePanel extends JPanel
                         40);                         // far background building
       }
       
-      page.setColor(new Color(0,0,0));  // ground  color
-      page.fillRect(0,380,600,20);      // ground
+      page.setColor(new Color(139,69,19));  // ground color
+      page.fillRect(0,380,600,20);  // ground
 
-      int index = 0; // initialized
-      index += (int)(Math.random()*10+15); // changed from 0 to random 34
-      while (index <= 500){                         // draws randomly-sized buildings and randomly-sized gaps
-      
-        int leWidth = (int)(Math.random()*30+60);   // Building's width
+      int index = (int)(Math.random()*10+15);  // 0 inclusive to 35 exclusive
+      while (index < 500)  // draws randomly-sized buildings and randomly-sized gaps
+      {                         
+        int randWidth = (int)(Math.random()*30+60);
+        int randHeight = (int)(Math.random()*100+150);
+        int gap = (int)(Math.random()*20+20);
         
-        building1 = new Building(index, 380,       // Building's Location
-                                 new Color(0,0,0),  // Black color
-                                 leWidth,
-                                 (int)(Math.random()*100+150));  // Building's height
+        building1 = new Building(index, 380,   // Building's Location
+                                 Color.cyan,   // Black color
+                                 randWidth,
+                                 randHeight);
                                 
         building1.draw(page);
         
-        index += leWidth;   // update index
-        index += (int)(Math.random()*20+20); // ???
+        index += randWidth;  // update index
+        index += gap;        // update index
       }
       
       page.setColor (Color.black);  // string color
