@@ -2,7 +2,7 @@
  * SkylinePanel --- program to draw buildings
  * @author          David Ye Luo, Kenta Medina
  * @version         1.0
- * @since           2016-09-27 
+ * @since           2016-10-10 
 */
 
 import javax.swing.*;
@@ -29,9 +29,9 @@ public class SkylinePanel extends JPanel
 
       super.paintComponent(page);
       for(int i = 0; i < 100; i++){
-        shinyThing = new Star((int)(Math.random()*600)
-                            , (int)(Math.random()*380)
-                            , Color.black, 5, 5);
+        shinyThing = new Star((int)(Math.random()*600),
+                              (int)(Math.random()*380),
+                               Color.black, 5, 5);
         shinyThing.draw(page);
       }
 
@@ -40,10 +40,10 @@ public class SkylinePanel extends JPanel
       
       page.setColor(new Color(0,0,0));   // far background building
       for(int i = 0; i < 40; i++){
-         page.fillRect((int)(Math.random()*680-40)  // far background building
-                      ,(int)(Math.random()*20+360)  // far background building
-                      ,(int)(Math.random()*20+40)   // far background building
-                      ,40);                         // far background building
+         page.fillRect((int)(Math.random()*680-40),  // far background building
+                       (int)(Math.random()*20+360),  // far background building
+                       (int)(Math.random()*20+40),   // far background building
+                        40);                         // far background building
       }
       
       page.setColor(new Color(0,0,0));  // ground  color
@@ -55,10 +55,10 @@ public class SkylinePanel extends JPanel
       
         int leWidth = (int)(Math.random()*30+60);   // Building's width
         
-        building1 = new Building(index, 380         // Building's Location
-                                , new Color(0,0,0)  // Black color
-                                , leWidth
-                                , (int)(Math.random()*100+150));  // Building's height
+        building1 = new Building(index, 380,       // Building's Location
+                                 new Color(0,0,0),  // Black color
+                                 leWidth,
+                                 (int)(Math.random()*100+150));  // Building's height
                                 
         building1.draw(page);
         
