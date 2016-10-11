@@ -11,8 +11,6 @@ import java.lang.*;
 
 public class SkylinePanel extends JPanel
 {
-    private Building building1; //instantiate
-    private Star shinyThing;
    //-------------------------------------------------
    //   Default Constructor: Sets up the Panel
    //-------------------------------------------------
@@ -29,7 +27,7 @@ public class SkylinePanel extends JPanel
 
       super.paintComponent(page);
       for(int i = 0; i < 100; i++){  // stars
-        shinyThing = new Star((int)(Math.random()*600),  // x location of stars
+        Star shinyThing = new Star((int)(Math.random()*600),  // x location of stars
                               (int)(Math.random()*380),  // y location of stars
                                Color.yellow, 5, 5);      // color and sizes of stars
         shinyThing.draw(page);
@@ -56,12 +54,11 @@ public class SkylinePanel extends JPanel
         int randHeight = (int)(Math.random()*100+150);
         int gap = (int)(Math.random()*20+20);
         
-        building1 = new Building(index, 380,   // Building's Location
-                                 Color.cyan,   // Black color
+        Building building = new Building(index, 380,  // Building's Location
+                                 Color.cyan,  // Black color
                                  randWidth,
                                  randHeight);
-                                
-        building1.draw(page);
+        building.draw(page);
         
         index += randWidth;  // update index
         index += gap;        // update index
